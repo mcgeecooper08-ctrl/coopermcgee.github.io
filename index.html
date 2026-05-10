@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>TikTok Bot</title></head>
-<body style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px">
-<h1>TikTok Bot</h1>
-<p>An automated app that creates and posts Reddit AITA story videos to a personal TikTok account.</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AITA Stories Bot</title>
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #0a0a1a; color: #eee; min-height: 100vh; }
+    header { background: #111128; border-bottom: 2px solid #6a0dad; padding: 20px 40px; display: flex; align-items: center; gap: 16px; }
+    header img { width: 52px; height: 52px; border-radius: 10px; }
+    header h1 { font-size: 1.6em; color: #fff; }
+    header span { font-size: 0.95em; color: #aaa; margin-left: 4px; }
+    .hero { text-align: center; padding: 80px 20px 60px; }
+    .hero img { width: 110px; height: 110px; border-radius: 22px; box-shadow: 0 0 40px #6a0dad88; margin-bottom: 24px; }
+    .hero h2 { font-size: 2.2em; color: #fff; margin-bottom: 12px; }
+    .hero p { font-size: 1.1em; color: #bbb; max-width: 600px; margin: 0 auto 30px; line-height: 1.7; }
+    .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .badge { background: #1a1a3a; border: 1px solid #6a0dad55; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; color: #cc88ff; }
+    .links { display: flex; gap: 20px; justify-content: center; padding: 40px 20px; }
+    .links a { color: #cc88ff; text-decoration: none; font-size: 1em; border-bottom: 1px solid #6a0dad88; padding-bottom: 2px; }
+    .links a:hover { color: #fff; }
+    footer { text-align: center; padding: 30px; color: #555; font-size: 0.85em; border-top: 1px solid #222; }
+    .section { max-width: 750px; margin: 0 auto; padding: 0 20px 60px; }
+    .section h3 { color: #cc88ff; font-size: 1.1em; margin-bottom: 8px; }
+    .section p { color: #bbb; line-height: 1.7; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icon.png" alt="AITA Stories Bot icon">
+    <div>
+      <h1>AITA Stories Bot</h1>
+      <span>Automated TikTok Content App</span>
+    </div>
+  </header>
 
-<h2 id="terms">Terms of Service</h2>
-<p>This application is a personal automation tool used solely by its owner to post content to their own TikTok account. By using this tool, you agree that it is for personal use only. No user data is collected from third parties.</p>
+  <div class="hero">
+    <img src="icon.png" alt="AITA Stories Bot">
+    <h2>AITA Stories Bot</h2>
+    <p>An automated application that generates short-form video content from Reddit's r/AITA community and posts it to a personal TikTok account using the TikTok Content Posting API.</p>
+    <div class="badges">
+      <span class="badge">TikTok Content Posting API</span>
+      <span class="badge">Reddit AITA Stories</span>
+      <span class="badge">Automated Video Generation</span>
+      <span class="badge">Personal Use Only</span>
+    </div>
+  </div>
 
-<h2 id="privacy">Privacy Policy</h2>
-<p>This application does not collect, store, or share any personal data from third parties. It accesses TikTok only on behalf of its owner to post videos. No data is sold or shared with any external services beyond what is required to operate the TikTok API integration.</p>
+  <div class="section">
+    <h3>What this app does</h3>
+    <p>AITA Stories Bot is a personal automation tool that reads publicly available posts from Reddit's r/AmITheAsshole subreddit, converts them into narrated short-form videos, and posts them to a single personal TikTok account via the official TikTok Content Posting API (video.publish scope).</p>
 
-<p><em>Last updated: May 2026</em></p>
+    <h3>Who uses it</h3>
+    <p>This app is operated solely by its owner for their own personal TikTok account. It does not serve third-party users and does not collect, process, or share any third-party personal data.</p>
+
+    <h3>TikTok API Integration</h3>
+    <p>This app uses TikTok Login Kit for authentication and the Content Posting API (Direct Post) to publish videos. All API usage complies with TikTok's Developer Terms of Service and Platform Policies.</p>
+  </div>
+
+  <div class="links">
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <footer>
+    &copy; 2025 AITA Stories Bot &nbsp;|&nbsp; <a href="terms.html" style="color:#666;">Terms</a> &nbsp;|&nbsp; <a href="privacy.html" style="color:#666;">Privacy</a>
+  </footer>
 </body>
 </html>
